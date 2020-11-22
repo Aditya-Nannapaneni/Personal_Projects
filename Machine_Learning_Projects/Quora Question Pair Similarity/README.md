@@ -15,6 +15,13 @@ Given a dataset containing question id's, 2 questions (text format) and a binary
   - Identify which questions asked on Quora are duplicates of questions that have already been asked.
   - This could be useful to instantly provide answers to questions that have already been answered.
   - We are tasked with predicting whether a pair of questions are duplicates or not.
+  
+  ### Real world business objectives and constraints: 
+    - The cost of a mis-classification can be very high.
+    - You would want a probability of a pair of questions to be duplicates so that you can choose any threshold of choice.
+    - No strict latency concerns.
+    - Interpretability is partially important.
+
 
 ## Approach
 
