@@ -36,3 +36,7 @@ Interpret the model results to the extent possible
 
 ## Results
 
+1. Using the given building energy data, a machine learning model can predict the Energy Star Score of a building to within 10 points.
+2. The most important variables for determining the Energy Star Score are the Energy Use Intensity, Electricity Use Intensity, and the Water Use Intensity
+
+
