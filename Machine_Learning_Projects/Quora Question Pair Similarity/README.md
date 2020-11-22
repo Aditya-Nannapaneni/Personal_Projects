@@ -56,13 +56,13 @@ Performance Metrics:
 
 ## Fuzzy Features:
 
-  - fuzz_ratio : https://github.com/seatgeek/fuzzywuzzy#usage http://chairnerd.seatgeek.com/fuzzywuzzy-fuzzy-string-matching-in-python/
+  - fuzz_ratio : https://github.com/seatgeek/fuzzywuzzy#usage 
 
-  - fuzz_partial_ratio : https://github.com/seatgeek/fuzzywuzzy#usage http://chairnerd.seatgeek.com/fuzzywuzzy-fuzzy-string-matching-in-python/
+  - fuzz_partial_ratio : https://github.com/seatgeek/fuzzywuzzy#usage 
 
-  - token_sort_ratio : https://github.com/seatgeek/fuzzywuzzy#usage http://chairnerd.seatgeek.com/fuzzywuzzy-fuzzy-string-matching-in-python/
+  - token_sort_ratio : https://github.com/seatgeek/fuzzywuzzy#usage 
 
-  - token_set_ratio : https://github.com/seatgeek/fuzzywuzzy#usage http://chairnerd.seatgeek.com/fuzzywuzzy-fuzzy-string-matching-in-python/
+  - token_set_ratio : https://github.com/seatgeek/fuzzywuzzy#usage
 
   - longest_substr_ratio : Ratio of length longest common substring to min lenghth of token count of Q1 and Q2
   
