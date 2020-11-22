@@ -31,7 +31,7 @@ Performance Metrics:
   - As specified in the Kaggle competition by Quora Log Loss would be our KPI.
   - We will also be looking at the Binary Confusion Matrix to get a better intuition of model performance
 
-## Some on the features engineered:
+## Examples of engineered features:
   ### Definition:
 
   - Token: You get a token by splitting sentence a space
