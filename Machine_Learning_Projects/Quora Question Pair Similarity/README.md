@@ -80,6 +80,7 @@ Performance Metrics:
   
  <p align="center"><img src = "images/qqps_2dTSNE.png" width = 600>
  
+ **Observations**
 - We see that though there is significant overlap between data points of both the classes, there are also regions isolation  data points belonging to a               particular class, implying that the new engineered features can be used to classify data points.
 
 
