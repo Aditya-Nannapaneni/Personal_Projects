@@ -76,5 +76,6 @@ Performance Metrics:
   
 ## Interesting Plots:
 
+![](images/qqps_2dTSNE.png)
 
 
