@@ -76,6 +76,12 @@ Performance Metrics:
   
 ## Interesting Plots:
 
-<img src = "images/qqps_2dTSNE.png" width = 600>
+### T-SNE visualization: 15 feature space brought down to 2D space 
+  #### Observations
+  We see that though there is significant overlap between data points of both the classes, there are also regions isolation  data points belonging to a           particular class, implying that the new engineered features can be used to classify data points.
 
+
+<img src = "images/qqps_2dTSNE.png" width = 600>
+  
+  
 
