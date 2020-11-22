@@ -31,4 +31,53 @@ Performance Metrics:
   - As specified in the Kaggle competition by Quora Log Loss would be our KPI.
   - We will also be looking at the Binary Confusion Matrix to get a better intuition of model performance
 
-## Results
+## Some on the features engineered:
+  ### Definition:
+
+  Token: You get a token by splitting sentence a space
+  Stop_Word : stop words as per NLTK.
+  Word : A token that is not a stop_word
+  Features:
+
+  - cwc_min : Ratio of common_word_count to min lenghth of word count of Q1 and Q2
+  
+  - cwc_max : Ratio of common_word_count to max lenghth of word count of Q1 and Q2
+  
+  - csc_min : Ratio of common_stop_count to min lenghth of stop count of Q1 and Q2
+ 
+  - csc_max : Ratio of common_stop_count to max lenghth of stop count of Q1 and Q2
+ 
+  - ctc_min : Ratio of common_token_count to min lenghth of token count of Q1 and Q2
+  
+  - ctc_max : Ratio of common_token_count to max lenghth of token count of Q1 and Q2
+  
+  - last_word_eq : Check if last word of both questions is equal or not
+  
+  - first_word_eq : Check if First word of both questions is equal or not
+  
+  - abs_len_diff : Abs. length difference
+  
+  - mean_len : Average Token Length of both Questions
+ 
+
+## Fuzzy Features:
+
+  - fuzz_ratio : https://github.com/seatgeek/fuzzywuzzy#usage http://chairnerd.seatgeek.com/fuzzywuzzy-fuzzy-string-matching-in-python/
+
+  - fuzz_partial_ratio : https://github.com/seatgeek/fuzzywuzzy#usage http://chairnerd.seatgeek.com/fuzzywuzzy-fuzzy-string-matching-in-python/
+
+  - token_sort_ratio : https://github.com/seatgeek/fuzzywuzzy#usage http://chairnerd.seatgeek.com/fuzzywuzzy-fuzzy-string-matching-in-python/
+
+  - token_set_ratio : https://github.com/seatgeek/fuzzywuzzy#usage http://chairnerd.seatgeek.com/fuzzywuzzy-fuzzy-string-matching-in-python/
+
+  - longest_substr_ratio : Ratio of length longest common substring to min lenghth of token count of Q1 and Q2
+  
+  - longest_substr_ratio = len(longest common substring) / (min(len(q1_tokens), len(q2_tokens))
+
+
+## Results 
+
+  - Preprocessed, featurized text data using TF-IDF weighted Word2vec, posed a binary classification task. 
+  - Experimented with various ML models, tuned best performing GBDT model yielding a log loss of 0.357.
+
+
