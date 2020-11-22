@@ -42,7 +42,9 @@ Interpret the model results to the extent possible
 4. Gradient Boosted Regressor performed the best
 5. Tuned Hyperparameters using Random Search & 4-fold Cross Validation on the best performing model to predict the Energy Star Score of a building to within 10 points. 
 
-#### Best performing models predictions on the test dataset
+#### Best performing model's predictions on the test dataset
+    - The distribution looks to be nearly the same although the density of the predicted values is closer to the median of the test values rather than to the actual       peak at 100. It appears the model might be less accurate at predicting the extreme values and instead predicts values closer to the median.
+
 ![](images/building_test&preds.png)
 
 
