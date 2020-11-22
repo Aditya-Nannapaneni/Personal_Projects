@@ -34,20 +34,14 @@ Performance Metrics:
 ## Some on the features engineered:
   ### Definition:
 
-  Token: You get a token by splitting sentence a space
-  Stop_Word : stop words as per NLTK.
-  Word : A token that is not a stop_word
-  Features:
+  - Token: You get a token by splitting sentence a space
+  - Stop_Word : stop words as per NLTK.
+  - Word : A token that is not a stop_word
+  ### Features:
 
   - cwc_min : Ratio of common_word_count to min lenghth of word count of Q1 and Q2
-  
-  - cwc_max : Ratio of common_word_count to max lenghth of word count of Q1 and Q2
-  
-  - csc_min : Ratio of common_stop_count to min lenghth of stop count of Q1 and Q2
  
   - csc_max : Ratio of common_stop_count to max lenghth of stop count of Q1 and Q2
- 
-  - ctc_min : Ratio of common_token_count to min lenghth of token count of Q1 and Q2
   
   - ctc_max : Ratio of common_token_count to max lenghth of token count of Q1 and Q2
   
