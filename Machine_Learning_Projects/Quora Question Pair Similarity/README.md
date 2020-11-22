@@ -72,6 +72,9 @@ Performance Metrics:
 ## Results 
 
   - Preprocessed, featurized text data using TF-IDF weighted Word2vec, posed a binary classification task. 
-  - Experimented with various ML models, tuned best performing GBDT model yielding a log loss of 0.357.
+  - Experimented with various ML models, tuned best performing GBDT model yielding a log loss of 0.357. 
+  
+## Interesting Plots:
+
 
 
