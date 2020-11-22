@@ -76,6 +76,6 @@ Performance Metrics:
   
 ## Interesting Plots:
 
-<img src = "images/qqps_2dTSNE.png">
+<img src = "images/qqps_2dTSNE.png" width = 300>
 
 
