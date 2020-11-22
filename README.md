@@ -18,4 +18,4 @@ I consider myself a data detective with a passion for modeling complex real-worl
 | ----------------------| ------------------------------------------ |
 | Professional Email:   | anannapaneni96@gmail.com                   |
 | School Email:         | nannapaneni.a@northeastern.edu             |
-| Linkedin :            | https://www.linkedin.com/in/anannapaneni/  |
+| Linkedin:             | https://www.linkedin.com/in/anannapaneni/  |
