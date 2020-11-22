@@ -24,5 +24,15 @@ Use the provided building energy data to develop a model that can predict a buil
 
 ## Approach
 
+Although the exact implementation details can vary, I tried to workthrough the problem adhering to this workflow:
+
+Data cleaning and formatting
+Exploratory data analysis
+Feature engineering and selection
+Establish a baseline and compare several machine learning models on a performance metric
+Perform hyperparameter tuning on the best model to optimize it for the problem
+Evaluate the best model on the testing set
+Interpret the model results to the extent possible
+
 ## Results
 
