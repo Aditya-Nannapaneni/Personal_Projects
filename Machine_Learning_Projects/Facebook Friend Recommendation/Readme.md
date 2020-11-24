@@ -12,6 +12,7 @@
    **NOTE:** We are only given a snapshot of data at a time t, since we aren’t given any timestamps corresponding to the data.
 
 ## Problem Statement 
+Given a directed social graph, have to predict missing links to recommend users (Link Prediction in graph)
 
 ## Approach 
 
