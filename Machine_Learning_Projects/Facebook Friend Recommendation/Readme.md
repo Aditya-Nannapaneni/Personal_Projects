@@ -14,6 +14,10 @@
 ## Problem Statement 
 Given a directed social graph, have to predict missing links to recommend users (Link Prediction in graph)
 
+**Business objectives and constraints:**
+- No low-latency requirement.
+- Probability of prediction is useful to recommend highest probability links
+
 ## Approach 
 
 ## Results
