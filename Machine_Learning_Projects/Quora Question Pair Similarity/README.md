@@ -64,7 +64,7 @@ Performance Metrics:
 
   - token_set_ratio : https://github.com/seatgeek/fuzzywuzzy#usage
 
-  - longest_substr_ratio : Ratio of length longest common substring to min lenghth of token count of Q1 and Q2
+  - longest_substr_ratio : Ratio of length longest common substring to min length of token count of Q1 and Q2
   
   - longest_substr_ratio = len(longest common substring) / (min(len(q1_tokens), len(q2_tokens))
 
