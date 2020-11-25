@@ -39,11 +39,11 @@ Performance Metrics:
   - Word : A token that is not a stop_word
   ### Features:
 
-  - cwc_min : Ratio of common_word_count to min lenghth of word count of Q1 and Q2
+  - cwc_min : Ratio of common_word_count to min length of word count of Q1 and Q2
  
-  - csc_max : Ratio of common_stop_count to max lenghth of stop count of Q1 and Q2
+  - csc_max : Ratio of common_stop_count to max length of stop count of Q1 and Q2
   
-  - ctc_max : Ratio of common_token_count to max lenghth of token count of Q1 and Q2
+  - ctc_max : Ratio of common_token_count to max length of token count of Q1 and Q2
   
   - last_word_eq : Check if last word of both questions is equal or not
   
