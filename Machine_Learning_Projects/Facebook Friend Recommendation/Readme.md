@@ -3,10 +3,14 @@
 ## Quick Introduction
   
   ### Data Overview:
-      We are given 2 numerical features, a source node and a destination node. 
-       Data columns (total 2 columns):  
-     - source_node         int64  
-     - destination_node    int64  
+      We are given 2 numerical features:  
+     
+|  Data columns                 | Type                              |
+| ------------------------------| --------------------------------- |
+| source_node                   | int64                             |
+| destination_node              | int64                             |
+
+
    We have 1.86 M users / nodes in the graph.
    We have 9.43 M directed edges.  
    **NOTE:** We are only given a snapshot of data at a time t, since we aren’t given any timestamps corresponding to the data.
@@ -19,7 +23,32 @@ Given a directed social graph, have to predict missing links to recommend users 
 - Probability of prediction is useful to recommend highest probability links
 
 ## Approach 
+Posing this problem as a binary calssification task. 
+  Let the connected nodes be given a target class label of 1. We are only given points having target class label of 1 in our dataset. To pose this problem as a binary calssification task, I did the following:
+  1. Let the set containing all the possible edges in my graph be denoted by G.
+  2. Let bad_edges be a set defined as, bad_edges = G - edges present in our training data (points with class label 1).
+  3. Take a random sample of 2 edges bad_edges of size equal to our training data (9.43 M) can set thee class label of these points to 0.
+  **NOTE:** 
+  While generating points of class label 0, this situation may arise:
+  Let A, B, C, D be 4 nodes/users in out social network graph(nodes in our dataset), lets say their orientation in some n dimensional space be given as show below:
+   <p align="center"><img src = "images/networkExample.png" width = 200>
+  
+  - Let len(u1, u2) denote the shortest path between 2 arbitrary nodes in our graph.
+  - As we can see there is no edge between A-C and A-D. But len(A,C) = 2, so there is a high probability that A & C will connect on the future. 
+  - len(A,D) = 3, while generating new points with class label 0, we only do so for points having shortest path greater than 2.  
+  
+  We now have a balanced dataset with class labels 1, 0.
+  
+## Feature Engineering: Graph Featurization
+Since we are basically given a dataset that represents node, edges in a graph, this dataset can't be directly used for ML modelling. We first have to come up with features that are pertinent for our use case. Some of the feature I built are:
+
+1. Jaccard Distance(j): 
+
+
+   Intuition 
+
+
 
 ## Results
 
-##
+## Interesting Plots:
