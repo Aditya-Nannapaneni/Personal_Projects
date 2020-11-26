@@ -43,12 +43,22 @@ Posing this problem as a binary calssification task.
 Since we are basically given a dataset that represents node, edges in a graph, this dataset can't be directly used for ML modelling. We first have to come up with features that are pertinent for our use case. Some of the feature I built are:
 
 1. Jaccard Distance(j): 
+Given 2 sets, X and Y, Jaccard distance is defined as the ratio of the size of the intersection between the sets and the size of the union between the sets.
+<p align="center"><img src = "images/jaccardDistance.png" width = 100>
 
-
-   Intuition 
-
-
+   Intuition: Higher the Jaccard Distance higher is the likelihood of an edge between the two nodes. 
+   
+   We now can get 2 features from this concept. jaccard_for_followers, jaccard_for_followees
+   
+2. Shortest Path:
+   This feature just gets the shortest path between 2 nodes, if the nodes have an edge i.e, trivially connected then we are removing that edge and calculating the shortest path.
 
 ## Results
+
+1. Modelled the given dataset as a directed graph, and posed the problem as a binary classification task, to predict the presence/absence of an edge between 2 nodes/users.
+2. Engineered various graph specific features like shortest path, jaccard/cosine distance for followers/followees e.t.c
+3. Built and tuned a Random Forest Classifiers and optimized for the best F-1 score.
+4. Extracted the feature importance from the model, follows back is the most important.
+5. Tuned the Random Forest Classifier gave an F-1 score of 0.96 on the training data and 0.92 on the test data.
 
 ## Interesting Plots:
