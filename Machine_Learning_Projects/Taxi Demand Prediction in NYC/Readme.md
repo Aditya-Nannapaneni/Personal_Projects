@@ -1,4 +1,5 @@
 ## Quick Introduction
+ <p align="center"><img src = "images/taxi_demand_prediction.gif" width = 600>
 
 **Problem Statement:**
 - Objective:
