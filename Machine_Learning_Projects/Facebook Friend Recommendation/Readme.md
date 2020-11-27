@@ -62,3 +62,48 @@ Given 2 sets, X and Y, Jaccard distance is defined as the ratio of the size of t
 5. Tuned the Random Forest Classifier gave an F-1 score of 0.96 on the training data and 0.92 on the test data.
 
 ## Interesting Plots:
+
+<p align="center"><img src = "images/graphVisual.png" width = 400>
+  
+**Observations:**
+- Visualizing a subset of the graph with high-level statistics.
+
+
+<p align="center"><img src = "images/following.png" width = 400>
+  
+**Observations:**
+- We can see that there is one person that follows 1500+ people, but most people follow fewer people.
+
+
+<p align="center"><img src = "images/pdf_indegree.png" width = 400>
+  
+**Observations:**
+- Most users have a small number of followers.
+  
+<p align="center"><img src = "images/estimators vs depth.png" width = 400>
+  
+**Observations:**
+- Change in F-1 score with varying the number of estimators of the Random Forest classifier, to find the optimal number of estimators.
+  
+<p align="center"><img src = "images/Depth VS Score.png" width = 400>
+
+**Observations:**
+- Change in F-1 score with varying depth of the Random Forest classifier, to find the optimal depth.
+  
+<p align="center"><img src = "images/confusionMatrix_test.png" width = 600>
+
+**Observations:**
+- The precision of class 0 on the test data (0.891) seems low, compared to the train data (0.954)
+- The recall of class 1 on the test data (0.880) seems low, compared to the train data (0.952)
+- This might be because of cold start problem.
+  
+<p align="center"><img src = "images/feature_importance.png" width = 500>
+  
+**Observations:**
+- Feature importance extracted from the Random Forest classifier.
+
+  
+
+  
+  
+  
