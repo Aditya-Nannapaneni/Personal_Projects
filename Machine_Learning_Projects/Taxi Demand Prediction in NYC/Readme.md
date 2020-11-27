@@ -1,6 +1,6 @@
 ## Quick Introduction
 
-## Problem Statement
+**Problem Statement:**
 - Objective:
     - At a given time and location in NYC we want to predict the number of pickups in a 10 minutes interval.
 - Constraints:
