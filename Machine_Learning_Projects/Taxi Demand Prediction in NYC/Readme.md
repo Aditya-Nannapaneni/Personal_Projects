@@ -1,5 +1,5 @@
 ## Quick Introduction
- <p align="center"><img src = "images/taxi_demand_prediction.gif" width = 600>
+ <p align="center"><img src = "images/taxi_demand_prediction.gif" width = 500>
 
 **Problem Statement:**
 - Objective:
@@ -54,3 +54,26 @@ Given a clusterId and 10 minute time interval we want to predict the number of p
     | XgBoost Regression            | 0.13930527439102075 |           
 
 ## Interesting Plots
+
+ <p align="center"><img src = "images/datacleaning_pickups.png" width = 400>
+ 
+ **Observations:**
+- Clearly there are outliers in this dataset! This dataset is only supposed to have latitudes and longitudes in New York City
+
+ <p align="center"><img src = "images/pdf_tripTimes.png" width = 400>
+ 
+  **Observations:**
+- The PDF of trip_times suspiciously looks like a log-normal distribution. Let's take the log values to see how the plot looks, we expect it to look like a bell cure. 
+
+ <p align="center"><img src = "images/log_tripTimes.png" width = 400>
+ 
+  **Observations:**
+- Looking the left and right tails of this curve, this doesn't look like a Gaussian distribution. Let's confirm this using a Q-Q plot.
+
+<p align="center"><img src = "images/checkforgaussianDist.png" width = 400>
+ 
+ **Observations:**
+- We can clearly see that within a certain interquartile range the log(trip_times) behaves like a Gaussian distribution, but outside this range it doesn't. 
+ 
+ 
+
