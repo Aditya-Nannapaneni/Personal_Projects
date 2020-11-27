@@ -1,4 +1,5 @@
 ## Quick Introduction
+  **Regions obtained after clustering the latitudes/longitudes in the dataset**
  <p align="center"><img src = "images/taxi_demand_prediction.gif" width = 500>
 
 **Problem Statement:**
