@@ -15,12 +15,41 @@
 ## Approach
 Our problem is a regression task with temporal data, essentially time-series prediction.
 
-**Data Cleaning:**
+1. Cluster NYC into regions using K-means clustering, while doing so we have to make sure that the cluster sizes make sense, as if we have very small clusters(>0.5 miles) i.e esentially saying our cab driver to move from his current location to the end of the road! At the same time we don't want to cluste sizes to be very large(<2.0 miles).
+
+2. Time Binning: Used unix time stamps to bin data to 10 minute intervals. 
+
+Given a clusterId and 10 minute time interval we want to predict the number of pickups. I've used the 2015 data to train the models and 2016 data to test the model performance.
+
 
 **Performace Metrics:**
   - Mean Absolute Percentage Error(MAPE)
   - Mean Squared Error(MSE)
+  
+
 ## Results 
-- Used dask to handle massive datasets in this project.
+1. Used dask to handle massive datasets in this project.
+2. Cleaned outliers from the data based on legal constraints, analysis on latitudes/longitudes, trip duration/distance/speed/fare analysis.
+3. Segmented NYC into regions based on latitude and longitude usign K-means, used elbow method to find the optimal k.
+4. Used Fourier Transforms to featurize the time-series data.
+5. Used various classical time-series prediction models as baseline models, some of the models tried are simple/weighted moving average, exponential weighted moving average, grid searched the parameters of these models, yeilding the following results.
+
+    **Performance of baseline models:**
+    | Time Series Model             | MAPE             | MSE          |
+    | ------------------------------| -----------------|--------------|
+    | Moving Averages               | 16.8 %           | 353          |
+    | Weighted Moving Averages      | 16 %             | 303          |
+    | Exponential Moving Averages   | 16 %             | 300          |
+
+6. Posed the timeseries forecasting problem as a regression problem, used k-fold cross-validation to find the best hyperparameters for these regression models.
+7. ML models used: Linear Regression, Random Forest Regressor, XG Boost regressor. 
+
+    **Performance of ML models:**
+    | ML Model                      | MAPE                | 
+    | ------------------------------| --------------------|
+    | Best baseline model           | 0.14181921176402132 |  
+    | Linear Regression             | 0.1423244522314819  |           
+    | Random Forest Regression      | 0.13992726971245978 |           
+    | XgBoost Regression            | 0.13930527439102075 |           
 
 ## Interesting Plots
