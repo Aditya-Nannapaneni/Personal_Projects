@@ -90,7 +90,7 @@ Given 2 sets, X and Y, Jaccard distance is defined as the ratio of the size of t
 **Observations:**
 - Change in F-1 score with varying depth of the Random Forest classifier, to find the optimal depth.
   
-<p align="center"><img src = "images/confusionMatrix_test.png" width = 600>
+<p align="center"><img src = "images/confusion.png" width = 600>
 
 **Observations:**
 - The precision of class 0 on the test data (0.891) seems low, compared to the train data (0.954)
